@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* background: linear-gradient(to right, #d8c320, #b5dd46);; */
+    background-image: url('image/hot.png');
+    color: beige;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 24px;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+}
+.search-box{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid blueviolet;
+    border-radius: 15px 0 ;
+}
+.search-icon{
+    margin-right: 3px;
+    position:absolute;
+    left: 0;
+}
+#search-input{
+    border: 0;
+    outline: 0;
+    background:transparent;
+    
+}
+#search-input::placeholder{
+    color: rgb(233, 227, 227);
+}
+.info-wrapper{
+    /* tất cả theo hàng ngang */
+    display: flex;
+    /* các element theo hàng dọc  */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 40vh; */
+    padding-top: 80px;
+}
+.city-name{
+    margin-bottom: 3px;
+}
+.temperature{
+    font-size: 80px;
+    position: relative;
+}
+
+.temperature::after{
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+}
+.additional-section{
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+.additional-section .row{
+    display: flex ;
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    /* chia đều 2 row  chiếm 50-50*/
+    flex: 1;
+}
+
+.value1{
+    font-weight: bold;
+}
+

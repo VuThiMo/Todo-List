@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varlidate Form Javascript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="renderStudent()">
+    <div id="container">
+        <div class="main-input">
+            <input type="text" id="fullname" placeholder="nhập họ và tên">
+        <span id="error-fullname"></span>
+        <br>
+        <input type="email" id="email" placeholder="nhập địa chỉ Email">
+        <span id="error-email"></span>
+        <br>
+        <input type="number" id="phone" placeholder="nhập số điện thoại">
+        <span id="error-phone"></span>
+        <br>
+        <input type="text" id="address" placeholder="nhập địa chỉ">
+        <span id="error-address"></span>
+        </div>
+        <br>
+        <span>Giới Tính</span>
+        <span>Nam </span> <input type="radio" id="male" name="gender" value="nam"> 
+        <span>Nữ </span> <input type="radio" id="female" name="gender" value="nữ">
+        <span id="error-gender"></span>
+        <br>
+        <button onclick="save()">Lưu lại</button>
+    </div>
+
+    <div id="information">
+        <table id="detail">
+            
+        </table>
+    </div>
+<input type="">
+    <script src="index.js"></script>
+</body>
+</html>
